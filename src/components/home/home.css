@@ -10,7 +10,7 @@
       /* background-color: rgb(253, 253, 253); */
     background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%);
 mix-blend-mode: normal;
-border-radius: 30px;
+border-radius: 10px;
 color: aliceblue;
 justify-content:space-evenly;
 text-align: center;
