@@ -1,0 +1,61 @@
+.navbar{
+position: sticky;
+top: 0;
+z-index: 999;
+width: 100%;
+justify-content: space-evenly;
+display: flex;
+padding-bottom: 15px;
+padding-top: 15px;
+/* background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
+background: linear-gradient(180deg, rgba(46, 46, 46, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(92, 92, 92, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%);
+/* overflow-x:auto; */
+}
+
+.home{
+    color: #FFFFFF;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+padding-top:15px ;
+  padding-left:15px;
+  padding-bottom:15px;
+  padding-right:15px;
+  
+}
+.foot{
+    color: #FFFFFF;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+padding-top:15px ;
+  padding-left:15px;
+  padding-bottom:15px;
+  padding-right:15px;
+}
+.news{
+    color: #FFFFFF;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+padding-top:15px ;
+  padding-left:15px;
+  padding-bottom:15px;
+  padding-right:15px;
+}
+.home:hover{
+  color: rgb(238, 232, 232);
+  background-color: rgb(112, 111, 111);
+ border-radius: 20px;
+}
+.foot:hover{
+  color: rgb(238, 232, 232);
+
+  background-color: rgb(112, 112, 112);
+ border-radius: 20px;
+}
+.news:hover{
+  color: rgb(238, 232, 232);
+  background-color: rgb(108, 108, 108);
+ border-radius: 20px;
+}

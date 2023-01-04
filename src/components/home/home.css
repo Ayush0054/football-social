@@ -1,0 +1,61 @@
+.homes{
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+      /* background-color: rgb(253, 253, 253); */
+    background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%);
+mix-blend-mode: normal;
+border-radius: 30px;
+color: aliceblue;
+justify-content:space-evenly;
+text-align: center;
+/* align-items: center; */
+/* display: flex; */
+height: 1000px;
+object-fit: cover;
+}
+
+
+.football{
+
+}
+.btn{
+    background-color:rgb(100, 99, 99);
+    height: 40px;
+    width: 100px;
+    font-size: medium;
+    border-radius:  7px;
+    border:  1px rgb(185, 184, 184) solid;
+    opacity: 100%;
+    z-index: 2;
+}
+.btn:hover{
+    background-color: rgb(134, 134, 134);
+    /* outline: none; */
+    
+}
+.btn:focus{
+      outline: none; 
+    }
+
+.landing{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    font-size: 100px;
+    padding-bottom: 30px;
+    margin-left: -10px;
+
+}    
+.foot-text{
+    color: black;
+}
+.unites{
+    color: black;
+}
