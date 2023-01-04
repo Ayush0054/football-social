@@ -36,13 +36,22 @@ box-shadow:  -25px 25px 100px #666666,
 .submit {
     /* display: none; */
     border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(206, 204, 204);
+    border: none;
+}
+.submit:hover{
+    background-color: rgb(255, 251, 251);
 }
 .post{
     
     background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%);
    margin-top: 25px;
    padding-top: 30px;
-   padding-bottom: 70px;
+   padding-bottom: 50px;
    margin-left: 10px;
    margin-right: 10px;
    margin-bottom: 25px;

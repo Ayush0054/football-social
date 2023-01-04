@@ -10,7 +10,7 @@ function Highlights() {
     method: 'GET',
       url: 'https://free-football-soccer-videos.p.rapidapi.com/',
       headers: {
-        'X-RapidAPI-Key': 'a569c8d6a6msh1cca4719cea1255p1ba527jsn3ec2352adbb3',
+        'X-RapidAPI-Key': "",
         'X-RapidAPI-Host': 'free-football-soccer-videos.p.rapidapi.com'
       } 
     };

@@ -20,9 +20,11 @@ function Feed() {
      </div>
     </form>
     </div>
+   
+    <div className="main-content">
 
+    </div>
      
-      
    </div>
   )
 }
