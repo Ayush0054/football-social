@@ -45,6 +45,7 @@ box-shadow:  -25px 25px 100px #666666,
 }
 .submit:hover{
     background-color: rgb(255, 251, 251);
+    box-shadow: 3px 3px 3px 3px #8a8989;
 }
 .post{
     
@@ -52,15 +53,53 @@ box-shadow:  -25px 25px 100px #666666,
    margin-top: 25px;
    padding-top: 30px;
    padding-bottom: 50px;
-   margin-left: 10px;
-   margin-right: 10px;
+   
    margin-bottom: 25px;
    padding-left: 40px;
    padding-right: 40px;
    mix-blend-mode: normal;
 border-radius: 10px;
 height: fit-content;
+box-shadow: 3px 3px 3px 3px #d4d3d3;
 }
 .main-area{
     flex: 0.6;
+    margin-left: 10px;
+   margin-right: 10px;
+   max-width: 800px;
+}
+
+  /* *************************************** user post section**************************  */
+.main-content{
+    width: fit-content;
+    /* margin-top: 55px; */
+    padding-top: 25px;
+    background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%);
+    min-width: 790px;
+    max-width: 800px;
+    /* justify-items:s; */
+    justify-content: space-between;
+    /* align-items: center; */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px #d4d3d3;  
+    padding-bottom: 25px;
+}
+.image-text{
+    padding-left: 20px;
+    padding-right: 20px;
+  display: flex;
+}
+.content-image{
+    max-width: 400px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+.para{
+    color: #ffffff;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+ /* word-wrap: break-word; */
+word-break:break-all;
 }

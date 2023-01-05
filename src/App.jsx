@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+//  import {Supabase} from './config/supabaseClient.js'
 import './App.css'
 // import Aaf from './components/aaf/aaf'
 import Navbar from './components/navbar/navbar'

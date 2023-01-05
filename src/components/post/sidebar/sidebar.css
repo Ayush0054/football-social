@@ -1,7 +1,7 @@
 .sidebar{
     flex:0.2;
-    max-width: 250px;
-    min-width: 250px;
+    /* max-width: 250px; */
+    /* min-width: 250px; */
     margin-top: 5px;
     /* padding-top: 10px;
     padding-bottom: 10px; */
@@ -21,6 +21,8 @@
     border-radius: 30px;
 }
 .newss{
+      /* align-items: center; */
+      justify-content: center;
       /* background-color: rgb(88, 88, 88); */
       background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%);
      width: fit-content;
@@ -32,6 +34,11 @@
      padding-bottom: 20px;
      border-radius: 10px;
      /* margin: auto; */
+     min-width: 270px;
+     max-width: 270px;
+     box-shadow: 3px 3px 3px 3px #d4d3d3;
+     align-items: center;
+    text-align: center;
 }
 .headline{
     color: #FFFFFF;

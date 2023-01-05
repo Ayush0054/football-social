@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import DOMPurify from "dompurify";
 import "./highlights.css"
+// import ".../.env" 
+// import  dotenv from 'dotenv' 
+// dotenv.config()
 function Highlights() {
   const [match,setMatch] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -10,7 +13,7 @@ function Highlights() {
     method: 'GET',
       url: 'https://free-football-soccer-videos.p.rapidapi.com/',
       headers: {
-        'X-RapidAPI-Key': "",
+        'X-RapidAPI-Key': import.meta.env.RapidAPI_Key,
         'X-RapidAPI-Host': 'free-football-soccer-videos.p.rapidapi.com'
       } 
     };
