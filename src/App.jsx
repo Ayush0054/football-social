@@ -1,5 +1,6 @@
 import { useState } from 'react'
-//  import {Supabase} from './config/supabaseClient.js'
+import { supabase } from './lib/client'
+// import { SupabaseClient } from '@supabase/supabase-js'
 import './App.css'
 // import Aaf from './components/aaf/aaf'
 import Navbar from './components/navbar/navbar'
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
- 
+      
      <Navbar/>
 
      {/* <Home/> */}

@@ -12,7 +12,7 @@
      resize: none;
 }
 .ip{
-     min-width:500px ;
+     min-width:480px ;
     margin-top: 20px;
     justify-content:space-evenly;
     display: flex;
@@ -29,6 +29,16 @@ box-shadow:  -25px 25px 100px #666666,
 }
 .ip2{
     display: flex;
+}
+.ip2 > input{
+    border-radius: 5px;
+    border: none;
+    /* flex: 1; */
+    outline-width: 0;
+    font-weight: 600;
+    margin-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .photo{
     margin-left: 5px;
@@ -55,12 +65,13 @@ box-shadow:  -25px 25px 100px #666666,
    padding-bottom: 50px;
    
    margin-bottom: 25px;
-   padding-left: 40px;
-   padding-right: 40px;
+   padding-left: 30px;
+   padding-right: 30px;
    mix-blend-mode: normal;
 border-radius: 10px;
 height: fit-content;
 box-shadow: 3px 3px 3px 3px #d4d3d3;
+min-width: 770px;
 }
 .main-area{
     flex: 0.6;
@@ -84,16 +95,19 @@ box-shadow: 3px 3px 3px 3px #d4d3d3;
     border-radius: 10px;
     box-shadow: 3px 3px 3px 3px #d4d3d3;  
     padding-bottom: 25px;
-}
-.image-text{
-    padding-left: 20px;
+    margin-bottom: 25px;
+     padding-left: 20px;
     padding-right: 20px;
   display: flex;
+}
+.image-text{
+   
 }
 .content-image{
     max-width: 400px;
     padding-left: 5px;
     border-radius: 10px;
+    height: fit-content;
 }
 .para{
     color: #ffffff;
