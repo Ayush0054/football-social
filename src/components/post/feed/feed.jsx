@@ -77,7 +77,7 @@ function Feed() {
     {fetchError && (<h3>{fetchError}</h3>)}
       {opinion && ( 
          <div className="idk">
-         <motion.div
+         {/* <motion.div
       className="box"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -93,14 +93,17 @@ function Feed() {
           restDelta: 0.001
         }
       }}
-    >
+    > */}
+        <FlipMove>
+
           {opinion.map((masti) => {
-         return  <div className="main-content">
+         return  <div className="main-content" key={masti.id}>
        <h3 className='para' key={masti.id}>{masti.content}</h3>
         <img className='content-image' src={masti.images} alt="messi" key={masti.id} />
          </div>
           })}
-          </motion.div>
+        </FlipMove>
+          {/* </motion.div> */}
          </div>
       )}
 

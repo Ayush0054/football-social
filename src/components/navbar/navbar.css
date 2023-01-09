@@ -8,10 +8,14 @@ display: flex;
 padding-bottom: 15px;
 padding-top: 15px;
 /* background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
-background: linear-gradient(180deg, rgba(46, 46, 46, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(92, 92, 92, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%);
+/* background: linear-gradient(180deg, rgba(46, 46, 46, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(92, 92, 92, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
 /* overflow-x:auto; */
+/* background-color: rgb(195, 226, 220); */
+/* background-color: rgba(255, 255, 255, 0.24); */
+/* background-color: rgba(255, 255, 255, 0.151); */
 }
-
+/* .navbar::{
+} */
 .home{
     color: #FFFFFF;
     font-family: 'Inter';

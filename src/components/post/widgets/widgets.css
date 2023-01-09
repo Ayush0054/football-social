@@ -18,7 +18,7 @@
     /* min-width: 270px;
      max-width: 270px; */
     border-radius: 10px;
-    background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%);
+    /* background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
     margin-top: 20px;
     margin-top: 20px;
      padding-left: 20px;
@@ -27,7 +27,9 @@
      padding-bottom: 20px;
     width: fit-content;
     height: fit-content;
-    box-shadow: 3px 3px 3px 3px #d4d3d3;
+    /* box-shadow: 3px 3px 3px 3px #d4d3d3; */
+    box-shadow: 3px 3px 3px 3px #9c7ecc;
+    background-color: rgba(255, 255, 255, 0.24);
 }
 .players{
     display: flex;
