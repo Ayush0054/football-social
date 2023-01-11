@@ -13,7 +13,7 @@
      resize: none;
 }
 .ip{
-     min-width:480px ;
+     /* min-width:480px ; */
     margin-top: 20px;
     justify-content:space-evenly;
     display: flex;
@@ -70,34 +70,34 @@
    padding-bottom: 50px;
    
    margin-bottom: 25px;
-   padding-left: 30px;
-   padding-right: 30px;
+   padding-left: 20px;
+   padding-right: 20px;
    mix-blend-mode: normal;
 border-radius: 10px;
 height: fit-content;
 /* box-shadow: 3px 3px 3px 3px #d4d3d3; */
 /* box-shadow: 3px 3px 3px 3px #e9e7e7; */
 box-shadow: 3px 3px 3px 3px #9c7ecc;
-min-width: 770px;
+/* min-width: 770px; */
 }
 .main-area{
     flex: 0.6;
-    margin-left: 10px;
-   margin-right: 10px;
-   max-width: 800px;
+    /* margin-left: 10px; */
+   /* margin-right: 10px; */
+   /* max-width: 800px; */
 }
 
   /* *************************************** user post section**************************  */
 .main-content{
-    width: fit-content;
+    /* width: fit-content; */
     /* margin-top: 55px; */
     padding-top: 25px;
     /* background-color: rgb(207, 229, 241); */
     /* background: linear-gradient(180deg, rgba(243, 241, 241, 0.384) 3.81%, rgba(235, 235, 235, 0.144) 23.85%, rgba(177, 177, 177, 0.196) 37.88%), linear-gradient(360deg, rgba(182, 182, 182, 0.6) -3.27%, rgba(167, 167, 167, 0.6) 1.27%); */
     background-color: rgba(255, 255, 255, 0.24);
     /* background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
-    min-width: 790px;
-    max-width: 800px;
+    /* min-width: 790px;
+    max-width: 800px; */
     /* justify-items:s; */
     justify-content: space-between;
     /* align-items: center; */
@@ -117,7 +117,8 @@ min-width: 770px;
    
 }
 .content-image{
-    max-width: 400px;
+    max-width: 250px;
+    max-height: 250px;
     padding-left: 5px;
     border-radius: 10px;
     height: fit-content;
@@ -127,10 +128,7 @@ min-width: 770px;
     font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
- /* word-wrap: break-word; */
-word-break:break-all;
+
+line-break: strict;
 }
 
-/* backdrop-filter: blur(5px);
-    transform-style: preserve-3d;
-    transform: perspective(800px)  */

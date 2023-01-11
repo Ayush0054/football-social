@@ -1,5 +1,5 @@
 .navbar{
-position: sticky;
+/* position: sticky; */
 top: 0;
 z-index: 999;
 width: 100%;
@@ -49,18 +49,37 @@ padding-top:15px ;
 }
 .home:after{
   color: rgb(238, 232, 232);
-  /* background-color: rgb(112, 111, 111); */
- /* border-radius: 20px; */
-   
+
 }
 .foot:hover{
   color: rgb(238, 232, 232);
-
-  /* background-color: rgb(112, 112, 112); */
- /* border-radius: 20px; */
 }
 .news:hover{
   color: rgb(238, 232, 232);
-  /* background-color: rgb(108, 108, 108); */
- /* border-radius: 20px; */
+}
+
+
+.navbar .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }

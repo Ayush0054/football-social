@@ -2,23 +2,36 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Highlights from '../highlights/highlights'
 import Home from '../home/home'
+import MenuIcon from '@mui/icons-material/Menu';
 import "./navbar.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import Home from './components/home/home'
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  } 
+}
 function Navbar() {
+  
   return (
-    <div className='navbar'>
+    <div className='navbar' id="myTopnav">
      <Link to="/">
 
-      <h3 className='home'>Home</h3>
+      <a className='home'>Home</a>
      </Link> 
      <Link to="/post">
-      <h3 className='foot'>All About Football</h3>
+      <a className='foot'>All About Football</a>
      </Link>
   
      <Link to="/highlights">
-      <h3 className='news'>Highlights</h3>
+      <a className='news'>Highlights</a>
      </Link>
-       
+     <a  class="icon" onclick="myFunction()">
+     <MenuIcon fontSize='large' color='tertiary'/>
+  </a>
     </div>
   )
 }

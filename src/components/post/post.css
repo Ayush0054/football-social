@@ -1,9 +1,8 @@
 .mains{
-     /* flex-direction: row; */
     display: flex;
-    /* justify-content: center; */
-    /* justify-content: center; */
-
+    /* max-width: 1200px; */
+    /* justify-content: space-evenly; */
+     
 }
 *{
     /* border-bottom: red 10px;
