@@ -9,20 +9,19 @@ import Highlights from './components/highlights/highlights.jsx'
 import Home from './components/home/home'
 import { Routes,Route } from 'react-router-dom'
 import Post from './components/post/post'
+import Login from './components/login/login'
 function App() {
 
   return (
     <div className="App">
       
      <Navbar/>
-
-     {/* <Home/> */}
-     {/* <Highlights/> */}
      <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="highlights" element={ <Highlights/> } />
         <Route path="post" element={ <Post/> } />
       </Routes>
+      {/* <Login/> */}
     </div>
   )
 }
