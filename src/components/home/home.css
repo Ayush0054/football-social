@@ -21,12 +21,11 @@ text-align: center;
 /* align-items: center; */
 /* display: flex; */
 height: 1000px;
-object-fit: cover;
+/* object-fit: cover; */
 /* box-shadow: 3px 3px 3px 3px #d4d3d3; */
 box-shadow: 3px 3px 3px 3px #9c7ecc;
 
 }
-
 
 .football{
 
@@ -59,11 +58,79 @@ box-shadow: 3px 3px 3px 3px #9c7ecc;
     font-size: 100px;
     padding-bottom: 30px;
     margin-left: -10px;
-
 }    
 .foot-text{
     color: black;
 }
 .unites{
     color: black;
+}
+.lottie{
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    right: 50px;
+    display: flex;
+}
+.footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    text-align: center;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+ul{
+   list-style: none;
+  
+}
+ul>li{
+
+    margin-top: 30px;
+   margin-bottom: 30px;
+}
+ul>li>a{
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .landing{
+        font-size: 30px;
+        
+    }
+    .Lottie{
+     
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .btn{
+        background-color:rgb(224, 222, 222);
+        height: 40px;
+        width: 100px;
+        font-size: medium;
+        border-radius:  7px;
+        border:  1px rgb(185, 184, 184) solid;
+        opacity: 100%;
+        z-index: 2;
+    }
+    .homes{
+        width: 390px;
+        /* margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    margin-left: 0px;
+    margin-right: 0px;
+    /* margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 10px; */
+    /* height: ; */
+    }
+    .Home-page{
+
+    }
+    .footer-cols{
+        grid-template-columns: repeat(2, 1fr);
+     }
 }

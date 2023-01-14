@@ -49,3 +49,8 @@ font-style: normal;
 font-weight: 400;
 padding-bottom: 5px;
 }
+@media screen and (max-width: 600px) {
+    .sidebar{
+        display: none;
+    }
+}

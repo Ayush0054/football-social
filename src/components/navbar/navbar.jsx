@@ -29,9 +29,12 @@ function Navbar() {
      <Link to="/highlights">
       <a className='news'>Highlights</a>
      </Link>
-     <a  class="icon" onclick="myFunction()">
+     <Link to="/login">
+      <a className='logins'>Login</a>
+     </Link>
+     {/* <a  class="icon" onclick="myFunction()">
      <MenuIcon fontSize='large' color='tertiary'/>
-  </a>
+  </a> */}
     </div>
   )
 }

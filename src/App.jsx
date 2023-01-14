@@ -10,6 +10,7 @@ import Home from './components/home/home'
 import { Routes,Route } from 'react-router-dom'
 import Post from './components/post/post'
 import Login from './components/login/login'
+import Registration from './components/registeration/registration'
 function App() {
 
   return (
@@ -21,7 +22,10 @@ function App() {
         <Route path="highlights" element={ <Highlights/> } />
         <Route path="post" element={ <Post/> } />
       </Routes>
-      {/* <Login/> */}
+      <Routes>   
+      <Route path="/login" element={ <Login/> } />
+      <Route path="/register" element={ <Registration/> } />
+     </Routes>
     </div>
   )
 }

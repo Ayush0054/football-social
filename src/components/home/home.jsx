@@ -1,19 +1,65 @@
 import React from 'react'
 import "./home.css"
-// import { motion } from "framer-motion"
-
-import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
-import SnowshoeingIcon from '@mui/icons-material/Snowshoeing';
+import Lottie from 'lottie-react'
+import animation from './bEFEN2dWtm.json';
+import { Link } from 'react-router-dom'
+// import { Route, Routes } from 'react-router-dom';
 function Home() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+  };
+  const style ={
+    height: 335,
+    width: 335,
+    // justifyContent:"center",
+    // alignItems: "center",
+    display:"flex"
+    // marginLeft:"150px"
+  }
   return (
+    <div className="Home-page">
     <div className='homes'>
     <div className="contents">
-      <h1 className='landing'> <span className='foot-text'>Football</span> the game ,that <span className='unites'>unites</span> the world</h1>
+      <h1 className='landing'> <span className='foot-text'>Football</span> Social </h1>
     </div>
-    <div className='football'>
+    <div className='lottie'>
+    <Lottie 
+    animationData={animation}
+	    options={defaultOptions}
+      style={style}
+      />   
+    </div>
+      <Link to="/register">
       <button className='btn'>get started</button>
+     </Link>
     </div>
-    
+    <div class="footer-cols">
+            <ul >
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Ways To Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Redeem Gift Cards</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Buy Gift Cards</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>  
+        </div>
     </div>
   )
 }
