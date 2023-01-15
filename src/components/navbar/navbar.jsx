@@ -6,6 +6,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import "./navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import Home from './components/home/home'
+import { useNavigate } from 'react-router-dom'
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "navbar") {
@@ -14,8 +16,17 @@ function myFunction() {
     x.className = "navbar";
   } 
 }
-function Navbar() {
+
+function Navbar({token}) {
+  let navigate = useNavigate()
   
+
+  function handleLogout(){
+    sessionStorage.removeItem('token')
+    navigate('/')
+  
+  
+  }
   return (
     <div className='navbar' id="myTopnav">
      <Link to="/">
@@ -29,9 +40,11 @@ function Navbar() {
      <Link to="/highlights">
       <a className='news'>Highlights</a>
      </Link>
-     <Link to="/login">
+
+      <button onClick={handleLogout} >Logout</button>
+     {/* <Link to="/login">
       <a className='logins'>Login</a>
-     </Link>
+     </Link> */}
      {/* <a  class="icon" onclick="myFunction()">
      <MenuIcon fontSize='large' color='tertiary'/>
   </a> */}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import { supabase } from '../../lib/client';
 import "./registration.css"
 function Registration() {
@@ -15,7 +16,7 @@ function Registration() {
       password:password,
       options:{
         data:{
-          name:name
+          Name:name
         }
       }
     }
@@ -40,7 +41,7 @@ function Registration() {
         </form>
         <p>
      Already a member?{" "}
-     {/* <span className='login_register' onClick={register}>Login</span> */}
+     <span className='login_register' ><Link to='/login'>Login</Link> </span>
      </p>
         </div>
     </div>

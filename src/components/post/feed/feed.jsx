@@ -5,7 +5,7 @@ import "./feed.css"
 import { supabase } from '../../../lib/client';
 import FlipMove from 'react-flip-move';
 import { motion } from "framer-motion";
-function Feed() {
+function Feed({token}) {
   const [image,setImage] = useState("");
   const [input , setInput] = React.useState("")
   const [post,setPost] = React.useState([])
@@ -98,8 +98,11 @@ function Feed() {
 
           {opinion.map((masti) => {
          return  <div className="main-content" key={masti.id}>
+           {/* <h2>{token.user.user_metadata.Name}</h2>  */}
+         <div className="all-contents">
        <h3 className='para' key={masti.id}>{masti.content}</h3>
         <img className='content-image' src={masti.images} alt="messi" key={masti.id} />
+         </div>
          </div>
           })}
         </FlipMove>
