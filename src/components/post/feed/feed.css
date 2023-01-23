@@ -101,7 +101,7 @@ box-shadow: 3px 3px 3px 3px #9c7ecc;
     /* justify-items:s; */
     justify-content: space-between;
     /* align-items: center; */
-    text-align: center;
+    /* text-align: center; */
     border-radius: 10px;
     /* box-shadow: 3px 3px 3px 3px #d4d3d3;  
      */
@@ -139,4 +139,14 @@ font-weight: 400;
 
 line-break: strict;
 }
-
+.userName{
+    color: #ebe7e7;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 60;
+margin-left: 10px;
+}
+.avatar-name{
+    display: flex;
+    align-items: center;
+}
