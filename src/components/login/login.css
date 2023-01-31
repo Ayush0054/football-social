@@ -2,7 +2,7 @@
   
 }
 .login{
-    min-height:650px ;
+    min-height:250px ;
     display: grid;
     place-items: center;
     margin-left: auto;
@@ -40,4 +40,7 @@
 }
 .login > form > button:hover {
     background-color: rgb(199, 173, 212);
+}
+.not-register{
+    margin-top: 20px;
 }

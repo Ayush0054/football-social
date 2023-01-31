@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { supabase } from "../../lib/client";
 import "./login.css";
-function Login({ setToken }) {
+function Login({ setToken, setRef }) {
   let navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  // const [ref, setRef] = useState(false);
   const login = async (e) => {
     e.preventDefault();
     try {
@@ -16,6 +16,10 @@ function Login({ setToken }) {
       });
       if (error) throw error;
       setToken(data);
+      if (data) {
+        sessionStorage.setItem("token", JSON.stringify(data));
+      }
+      setRef(true);
       // console.log(data);
       navigate("/Post");
     } catch (error) {
@@ -40,14 +44,14 @@ function Login({ setToken }) {
             placeholder="password"
           />
           <button onClick={login}>Login</button>
+          <p className="not-register">
+            Not a member?{" "}
+            <span className="login_register">
+              {" "}
+              <Link to="/register">Register Now</Link>{" "}
+            </span>
+          </p>
         </form>
-        <p>
-          Not a member?{" "}
-          <span className="login_register">
-            {" "}
-            <Link to="/register">Register Now</Link>{" "}
-          </span>
-        </p>
       </div>
     </div>
   );

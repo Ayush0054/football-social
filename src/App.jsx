@@ -9,35 +9,42 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Post from "./components/post/post";
 import Login from "./components/login/login";
 import Registration from "./components/registeration/registration";
+import Logout from "./components/logout/logout";
 function App() {
+  // const [ref, setRef] = useState(true);
+  const [ref, setRef] = useState(false);
   const [token, setToken] = useState(false);
-  if (token) {
-    sessionStorage.setItem("token", JSON.stringify(token));
-  }
 
   useEffect(() => {
     if (sessionStorage.getItem("token")) {
       let data = JSON.parse(sessionStorage.getItem("token"));
       console.log(data);
       setToken(data);
+      setRef(true);
     }
   }, []);
   return (
     <div className="App">
-      {token ? <Navbar token={token} /> : ""}
+      {/* {token ? <Navbar token={token} /> : ""} */}
+      {ref && <Navbar token={token} setRef={setRef} />}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login setToken={setToken} />} />
+        {/* <Route path="/logout" element={<Logout setRef={setRef} />} /> */}
+        <Route
+          path="/"
+          element={<Home setToken={setToken} setRef={setRef} />}
+        />
+        <Route
+          path="/login"
+          element={<Login setToken={setToken} setRef={setRef} />}
+        />
         <Route path="/register" element={<Registration />} />
       </Routes>
 
-      {token ? (
+      {token && (
         <Routes>
           <Route path="/post" element={<Post token={token} />} />
           <Route path="highlights" element={<Highlights token={token} />} />
         </Routes>
-      ) : (
-        ""
       )}
     </div>
   );

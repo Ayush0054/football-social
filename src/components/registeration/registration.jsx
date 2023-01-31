@@ -53,7 +53,7 @@ function Registration() {
           <p>
             Already a member?{" "}
             <span className="login_register">
-              <Link to="/login">Login</Link>{" "}
+              <Link to="/">Login</Link>{" "}
             </span>
           </p>
         </div>

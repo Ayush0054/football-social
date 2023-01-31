@@ -2,10 +2,26 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import DOMPurify from "dompurify";
 import "./highlights.css";
+import Lottie from "lottie-react";
+import animation from "./rolling-footbll.json";
 // import ".../.env"
 // import  dotenv from 'dotenv'
 // dotenv.config()
 function Highlights() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+  };
+  const style = {
+    height: 335,
+    width: 335,
+    // justifyContent:"center",
+    // alignItems: "center",
+    display: "flex",
+    // marginLeft:"150px"
+  };
+
+  // api
   const [match, setMatch] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchTitle, setSearchTitle] = useState("");
@@ -40,7 +56,13 @@ function Highlights() {
         />
       </div>
       <div className="fixtures">
-        {loading && <h3>loading...</h3>}
+        {loading && (
+          <Lottie
+            animationData={animation}
+            options={defaultOptions}
+            style={style}
+          />
+        )}
         {match &&
           match
             .filter((value) => {

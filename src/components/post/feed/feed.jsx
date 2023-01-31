@@ -113,12 +113,20 @@ function Feed({ token }) {
                     <h6 className="userName">{masti.user_name}</h6>
                   </div>
                   <div className="all-contents">
-                    <h3 className="para">{masti.content}</h3>
-                    <img
-                      className="content-image"
-                      src={masti.images}
-                      alt="messi"
-                    />
+                    {masti.content === "" ? (
+                      ""
+                    ) : (
+                      <h3 className="para">{masti.content}</h3>
+                    )}
+                    {masti.images === "" ? (
+                      ""
+                    ) : (
+                      <img
+                        className="content-image"
+                        src={masti.images}
+                        alt="image not uploaded"
+                      />
+                    )}
                   </div>
                   {/* <button
                     onClick={deleteOpinion(

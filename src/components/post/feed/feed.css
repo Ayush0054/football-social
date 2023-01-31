@@ -56,7 +56,8 @@
 }
 .submit:hover{
     background-color: rgb(255, 251, 251);
-    box-shadow: 3px 3px 3px 3px #8a8989;
+        box-shadow: 2px 2px 2px 2px #9c7ecc;
+    
 }
 .post{
     /* background-color: rgb(194, 194, 194); */
