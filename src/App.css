@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rajdhani:wght@500&display=swap');
 .App{
   display: flex;
   flex-direction: column;
+  font-family: 'Poppins', sans-serif;
   /* max-width: 1200px; */
   /* margin-top: 35px; */
   /* min-width: fit-content; */
