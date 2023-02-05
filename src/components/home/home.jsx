@@ -18,6 +18,11 @@ function Home({ setToken, setRef }) {
     display: "flex",
     // marginLeft:"150px"
   };
+    const handleLogout = () => {
+    sessionStorage.removeItem("token");
+    setRef(false);
+  };
+   handleLogout();
   return (
     <div className="Home-page">
       <div className="homes">
