@@ -47,28 +47,14 @@ function Feed({ token }) {
       setFormError("Please fill in all the fields correctly.");
     }
     if (data) {
-      // console.log(data);
-      // setOpinion(data)
       setFormError(null);
-
       // navigate('/post')
     }
     fetchOpnion();
     setInput("");
     setImage("");
   };
-  console.log(opinion);
 
-  const deleteOpinion = async () => {
-    const { error } = await supabase
-      .from("opinion")
-      .delete()
-      .eq("user_name", token.session.user.user_metadata.name);
-    if (error) {
-      console.log(error);
-    }
-    // fetchOpnion();
-  };
   return (
     <div className="main-area">
       <div className="post">
@@ -128,13 +114,6 @@ function Feed({ token }) {
                       />
                     )}
                   </div>
-                  {/* <button
-                    onClick={deleteOpinion(
-                      token.session.user.user_metadata.name
-                    )}
-                  >
-                    delete it
-                  </button> */}
                 </div>
               );
             })}

@@ -1,0 +1,9 @@
+.profile-update {
+  padding: 50px;
+  /* background: linear-gradient(to right, #fff 40%, transparent 0%); */
+  background-color: rgba(212, 212, 212, 0.164);
+  backdrop-filter: blur(5px);
+  min-height: ;
+  display: flex;
+  justify-content: space-between;
+}

@@ -5,11 +5,13 @@ import "./App.css";
 import Navbar from "./components/navbar/navbar";
 import Highlights from "./components/highlights/highlights.jsx";
 import Home from "./components/home/home";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
 import Post from "./components/post/post";
 import Login from "./components/login/login";
 import Registration from "./components/registeration/registration";
 import Logout from "./components/logout/logout";
+import Profile from "./components/profile/profile";
+import ProfileUpdate from "./components/profileUpdate/profileUpdate";
 function App() {
   // const [ref, setRef] = useState(true);
   const [ref, setRef] = useState(false);
@@ -25,10 +27,8 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {/* {token ? <Navbar token={token} /> : ""} */}
       {ref && <Navbar token={token} setRef={setRef} />}
       <Routes>
-        {/* <Route path="/logout" element={<Logout setRef={setRef} />} /> */}
         <Route
           path="/"
           element={<Home setToken={setToken} setRef={setRef} />}
@@ -42,8 +42,13 @@ function App() {
 
       {token && (
         <Routes>
+          <Route path="/profile" element={<Profile token={token} />} />
           <Route path="/post" element={<Post token={token} />} />
           <Route path="highlights" element={<Highlights token={token} />} />
+          <Route
+            path="/profileUpdate"
+            element={<ProfileUpdate token={token} />}
+          />
         </Routes>
       )}
     </div>
