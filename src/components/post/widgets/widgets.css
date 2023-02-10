@@ -1,60 +1,62 @@
-.widgets{
-    flex:0.2;
-    /* max-width: 270px;
+.widgets {
+  flex: 0.2;
+  /* max-width: 270px;
     min-width: 270px; */
-    /* background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
-    margin-top: 5px;
-    /* padding-top: 30px;
+  /* background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
+  margin-top: 5px;
+  /* padding-top: 30px;
     padding-bottom: 70px; */
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 25px;
-    padding-left: 20px;
-    /* padding-right: 20px; */
-    mix-blend-mode: normal;
-    height: fit-content;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  /* padding-right: 20px; */
+  mix-blend-mode: normal;
+  height: fit-content;
 }
-.widget{
-    /* min-width: 270px;
+.widget {
+  /* min-width: 270px;
      max-width: 270px; */
-    border-radius: 10px;
-    /* background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
-    margin-top: 20px;
-    margin-top: 20px;
-     padding-left: 20px;
-     padding-right: 20px;
-     padding-top: 20px;
-     padding-bottom: 20px;
-    width: fit-content;
-    height: fit-content;
-    /* box-shadow: 3px 3px 3px 3px #d4d3d3; */
-    box-shadow: 3px 3px 3px 3px #9c7ecc;
-    background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 10px;
+  /* background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
+  margin-top: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: fit-content;
+  height: fit-content;
+  /* box-shadow: 3px 3px 3px 3px #d4d3d3; */
+  background: rgba(20, 20, 21, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
 }
-.players{
-    display: flex;
-    justify-content: space-between;
+.players {
+  display: flex;
+  justify-content: space-between;
 }
-.player-text{
-    padding-left: 5px;
-    color: #FFFFFF;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
+.player-text {
+  padding-left: 5px;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
 }
-.player-text:hover{
-    color: rgb(212, 212, 212);
+.player-text:hover {
+  color: rgb(212, 212, 212);
 }
-.playernames-text{
-    padding-top: 5px;
-    padding-left: 15px;
-    color: #FFFFFF;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
+.playernames-text {
+  padding-top: 5px;
+  padding-left: 15px;
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
 }
 @media screen and (max-width: 600px) {
-    .widgets{
-        display: none;
-    }
+  .widgets {
+    display: none;
+  }
 }

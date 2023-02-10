@@ -4,6 +4,8 @@ import Lottie from "lottie-react";
 import animation from "./player-football.json";
 import { Link } from "react-router-dom";
 import Login from "../login/login";
+import { supabase } from "../../lib/client";
+import { useNavigate } from "react-router-dom";
 // import { Route, Routes } from 'react-router-dom';
 function Home({ setToken, setRef }) {
   const defaultOptions = {
@@ -18,6 +20,12 @@ function Home({ setToken, setRef }) {
     display: "flex",
     // marginLeft:"150px"
   };
+  const handleLogout = () => {
+    sessionStorage.removeItem("token");
+    // navigate("/");
+    setRef(false);
+  };
+  handleLogout();
   return (
     <div className="Home-page">
       <div className="homes">

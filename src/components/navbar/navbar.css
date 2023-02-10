@@ -1,97 +1,96 @@
-.navbar{
-/* position: sticky;
-top: 0;
-z-index: 999; */
-/* 
-width: 100%;
-justify-content: space-evenly;
-display: flex;
-padding-bottom: 15px;
-padding-top: 15px; */
-/* background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
-/* background: linear-gradient(180deg, rgba(46, 46, 46, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(92, 92, 92, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
-/* overflow-x:auto; */
-/* background-color: rgb(195, 226, 220); */
-/* background-color: rgba(255, 255, 255, 0.24); */
-/* background-color: rgba(255, 255, 255, 0.151); */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  background: rgba(20, 20, 21, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
 }
-/* .navbar::{
-} */
-.hide{
+.Logo-div {
+  width: 100%;
+  margin-left: 25px;
+  display: inline;
+  justify-content: center;
+}
+.Logo-football {
+  color: #ffffff;
+  font-weight: 1000;
+  font-size: 40px;
+}
+.Logo-social {
+  margin-left: 5px;
+  font-weight: 1000;
+  color: black;
+}
+.hide {
   top: 0;
-z-index: 999;
-width: 100%;
-justify-content: space-evenly;
-display: flex;
-padding-bottom: 15px;
-padding-top: 15px;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
-.home{
-    color: #FFFFFF;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-padding-top:15px ;
-  padding-left:15px;
-  padding-bottom:15px;
-  padding-right:15px;
-  
+.home {
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
 }
-.foot{
-    color: #FFFFFF;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-padding-top:15px ;
-  padding-left:15px;
-  padding-bottom:15px;
-  padding-right:15px;
+.foot {
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
 }
-.news{
-    color: #FFFFFF;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-padding-top:15px ;
-  padding-left:15px;
-  padding-bottom:15px;
-  padding-right:15px;
+.news {
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
 }
-.logins{
-   color: #FFFFFF;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-padding-top:15px ;
-  padding-left:15px;
-  padding-bottom:15px;
-  padding-right:15px;
+.logins {
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
 }
-.home:after{
-  color: rgb(238, 232, 232);
-
+.profile-link {
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
 }
-.foot:hover{
+.home:after {
   color: rgb(238, 232, 232);
 }
-.news:hover{
+.foot:hover {
   color: rgb(238, 232, 232);
 }
-
-.logout{
+.news:hover {
+  color: rgb(238, 232, 232);
+}
+.profile-link:hover {
+  color: rgb(238, 232, 232);
+}
+.logout {
   width: 65px;
   height: 30px;
   border-radius: 6px;
   font-size: large;
   color: white;
   background-color: rgba(193, 119, 207, 0.322);
-  box-shadow: 1px 1px 1px 1px #b38af5;
-border: none;
+  /* box-shadow: 1px 1px 1px 1px #b38af5; */
+  border: none;
 }
-.logout:hover{
-  background-color: #b38af5;
+.logout:hover {
+  /* background-color: #b38af5; */
 }
-
 
 /* .navbar .icon {
   display: none;
@@ -119,17 +118,31 @@ border: none;
 } */
 
 @media screen and (max-width: 600px) {
-  .navbar{
-    display:grid;
+  .navbar {
+    display: grid;
     text-align: center;
+    justify-items: center;
   }
-  .home{
-    padding-bottom: 30px;
+  .Logo-div {
+    display: grid;
+    text-align: center;
+    justify-items: center;
   }
-  .foot{
-    padding-bottom: 30px;
+  .hide {
+    display: grid;
+    text-align: center;
+    justify-items: center;
   }
-  .news{
-    padding-bottom: 30px;
+  .home {
+    padding-bottom: 10px;
+  }
+  .foot {
+    padding-bottom: 10px;
+  }
+  .news {
+    padding-bottom: 10px;
+  }
+  .logout {
+    margin-bottom: 10px;
   }
 }

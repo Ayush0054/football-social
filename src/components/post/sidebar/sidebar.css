@@ -1,56 +1,51 @@
-.sidebar{
-    flex:0.2;
-    /* max-width: 250px; */
-    /* min-width: 250px; */
-    margin-top: 5px;
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 25px;
-    /* padding-left: 20px; */
-    padding-right: 30px;
-    mix-blend-mode: normal;
- /* border-radius: 30px; */
- width: fit-content;
+.sidebar {
+  flex: 0.2;
+
+  margin-top: 5px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+
+  padding-right: 30px;
+  mix-blend-mode: normal;
+
+  width: fit-content;
   height: fit-content;
 }
-.image{
-    max-width: 200px;
-    max-height: 300px;
-    border-radius: 30px;
+.image {
+  max-width: 200px;
+  max-height: 300px;
+  border-radius: 30px;
 }
-.newss{
-      /* align-items: center; */
-      justify-content: center;
-      /* background-color: rgb(88, 88, 88); */
-      background-color: rgba(255, 255, 255, 0.24);
-      /* background: linear-gradient(180deg, rgba(121, 120, 121, 0.384) 3.81%, rgba(43, 43, 43, 0.144) 23.85%, rgba(15, 15, 15, 0.196) 37.88%), linear-gradient(360deg, rgba(100, 99, 101, 0.6) -3.27%, rgba(93, 92, 94, 0.6) 1.27%); */
-     width: fit-content;
-     height: fit-content;
-     margin-top: 20px;
-     padding-left: 20px;
-     padding-right: 20px;
-     padding-top: 20px;
-     padding-bottom: 20px;
-     border-radius: 10px;
-     /* margin: auto; */
-     /* min-width: 250px;
-     max-width: 250px; */
-     /* box-shadow: 3px 3px 3px 3px #d4d3d3; */
-     box-shadow: 3px 3px 3px 3px #9c7ecc;
-     align-items: center;
-    text-align: center;
+.newss {
+  justify-content: center;
+
+  width: fit-content;
+  height: fit-content;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+
+  background: rgba(20, 20, 21, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  align-items: center;
+  text-align: center;
 }
-.headline{
-    color: #FFFFFF;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-padding-bottom: 5px;
+.headline {
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 5px;
 }
 @media screen and (max-width: 600px) {
-    .sidebar{
-        display: none;
-    }
+  .sidebar {
+    display: none;
+  }
 }

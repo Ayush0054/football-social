@@ -11,14 +11,6 @@ import { useState } from "react";
 import Logout from "../logout/logout";
 import { supabase } from "../../lib/client";
 
-// function myFunction() {
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "navbar") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "navbar";
-//   }
-// }
 function Navbar({ setRef }) {
   let navigate = useNavigate();
 
@@ -39,20 +31,25 @@ function Navbar({ setRef }) {
 
   return (
     <div className="navbar">
-      {/* {ref && ( */}
+      <div className="Logo-div">
+        <h1 className="Logo-football">
+          Football<span className="Logo-social">Social</span>
+        </h1>
+      </div>
       <div className="hide">
         <Link to="/post">
-          <div className="foot">All About Football</div>
+          <h3 className="foot">All About Football</h3>
         </Link>
         <Link to="/highlights">
-          <div className="news">Highlights</div>
+          <h3 className="news">Highlights</h3>
         </Link>
         <button onClick={handleLogout} className="logout">
           Logout
         </button>
-        {/* <Logout setRef={setRef} /> */}
+        <Link to="/profile">
+          <h3 className="profile-link"> Profile</h3>
+        </Link>
       </div>
-      {/* )} */}
     </div>
   );
 }
