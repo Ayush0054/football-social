@@ -26,6 +26,7 @@ function Home({ setToken, setRef }) {
     setRef(false);
   };
   handleLogout();
+
   return (
     <div className="Home-page">
       <div className="homes">
