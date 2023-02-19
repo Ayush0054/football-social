@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { supabase } from "../../lib/client";
 import "./profile.css";
+import EditIcon from "@mui/icons-material/Edit";
+import { Link } from "react-router-dom";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import ProfileDisplay from "./profiledisplay/profiledisplay";
 function Profile({ token }) {
@@ -42,8 +44,18 @@ function Profile({ token }) {
 
   return (
     <div className="profile">
-      <ProfileDisplay setOpinion={setOpinion} opinion={opinion} token={token} />
-
+      <div className="display-edit">
+        <ProfileDisplay
+          setOpinion={setOpinion}
+          opinion={opinion}
+          token={token}
+        />
+        <div className="edit-profile">
+          <Link to="/profileUpdate">
+            Edit Profile <EditIcon className="edit-icon" />
+          </Link>
+        </div>
+      </div>
       {/* --------------------------------------------------------------------fetched opnions --------------------------------------------- */}
       <div className="myopnions">
         {fetchError && <h3>{fetchError}</h3>}
@@ -73,7 +85,10 @@ function Profile({ token }) {
                       />
                     )}
                   </div>
-                  <button onClick={() => deleteOpinion(masti.id)}>
+                  <button
+                    className="profile-post-delete"
+                    onClick={() => deleteOpinion(masti.id)}
+                  >
                     delete it
                   </button>
                 </div>

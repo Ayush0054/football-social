@@ -3,11 +3,11 @@
   justify-content: space-between;
   /* position: sticky; */
   top: 0;
-
+  flex: 0.98;
   margin-bottom: 20px;
-  margin-left: 200px;
+  margin-left: 100px;
   margin-top: 20px;
-  margin-right: 200px;
+  margin-right: 100px;
   border-radius: 10px;
   /* background-color: rgb(255, 255, 255); */
   min-height: 300px;
@@ -16,13 +16,17 @@
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
 }
+.profile-div1 {
+  display: flex;
+  justify-content: center;
+}
 .profile-image {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 30px;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 .profile-email {
   margin-right: 50px;
@@ -34,8 +38,11 @@
   margin-right: 50px;
   margin-top: 20px;
 }
-.edit-icon {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+.idkkk {
+  margin-right: 50px;
+  margin-top: 20px;
+}
+a {
+  color: white;
+  font-size: large;
 }

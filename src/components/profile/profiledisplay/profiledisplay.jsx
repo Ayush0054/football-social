@@ -4,56 +4,67 @@ import { Link } from "react-router-dom";
 import "./profiledisplay.css";
 import { supabase } from "../../../lib/client";
 function ProfileDisplay({ setOpinion, opinion, token }) {
-  const [fetchError, setFetchError] = useState(null);
-  const [link, setLink] = useState([]);
-  const downloadImage = async (path) => {
-    try {
-      const { data, error } = await supabase.storage
-        .from("avatar")
-        .download(path);
-      if (error) {
-        throw error;
-      }
-      const url = URL.createObjectURL(data);
-      // setAvatarUrl(url);
-    } catch (error) {
-      console.log("Error downloading image: ", error.message);
-    }
-  };
+  // const [fetchError, setFetchError] = useState(null);
+  // const [link, setLink] = useState("");
+  // const [image, setImage] = useState("");
+  // const fetchdetails = async () => {
+  //   e.preventDefault();
+  //   const { data, error } = await supabase
+  //     .from("links")
+  //     .select("twitter") //`content,images, users (raw_user_meta_data)`
+  //     .eq("user_name", token.session.user.user_metadata.name);
+  //   if (error) {
+  //     setFetchError("could not fetch the opnion");
+  //     setLink(null);
+  //     console.log(error);
+  //   }
+  //   if (data) {
+  //     setLink(data);
+  //     setFetchError(null);
+  //   }
+  // };
+  // const fetchImage = async () => {
+  //   const { data, error } = await supabase
+  //     .from("pfp")
+  //     .select("photo") //`content,images, users (raw_user_meta_data)`
+  //     .order("id");
+  //   if (error) {
+  //     setFetchError("could not fetch the opnion");
+  //     setImage(null);
+  //     console.log(error);
+  //   }
+  //   if (data) {
+  //     setImage(data);
+  //     setFetchError(null);
+  //   }
+  // };
 
-  const fetchdetails = async () => {
-    const { data, error } = await supabase
-      .from("profile_data")
-      .select("twitter") //`content,images, users (raw_user_meta_data)`
-      .order("id");
-    if (error) {
-      setFetchError("could not fetch the opnion");
-      setLink(null);
-      console.log(error);
-    }
-    if (data) {
-      setLink(data);
-      setFetchError(null);
-    }
-  };
+  // useEffect(() => {
+  //   fetchdetails();
+  //   fetchImage();
+  // }, []);
 
-  useEffect(() => {
-    fetchdetails();
-  }, []);
-
+  console.log(token.session.user.user_metadata.image.publicUrl);
   return (
     <div className="profile-details">
-      <img src={""} alt="img" className="profile-image" />
-      <h2 className="profile-name">{token.session.user.user_metadata.name}</h2>
-      <h2 className="profile-email">{token.session.user.email}</h2>
-      <Link to="/profileUpdate">
-        <EditIcon className="edit-icon" />
-      </Link>
-      {/* {link && ( */}
-      {link.map((tweet) => {
-        return <a href={tweet.twitter}>Link</a>;
-      })}
-      {/* )} */}
+      <div className="yes">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR00Z3totggyaGDo_l-7_-xlIBjXygktXx3g&usqp=CAU"
+          alt="imgs"
+          className="profile-image"
+        />
+      </div>
+
+      <div className="profile-div1">
+        <h2 className="profile-name">
+          {token.session.user.user_metadata.name}
+        </h2>
+        <h2 className="profile-email">{token.session.user.email}</h2>
+
+        <div className="idkkk">
+          <a href={token.session.user.user_metadata.link}>Link</a>
+        </div>
+      </div>
     </div>
   );
 }

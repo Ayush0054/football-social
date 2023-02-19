@@ -5,6 +5,7 @@ import "./registration.css";
 function Registration() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [link, setLink] = useState("");
   const [name, setName] = useState("");
 
   const create = async (e) => {
@@ -16,6 +17,8 @@ function Registration() {
         options: {
           data: {
             name: name,
+            link: link,
+            image: "dummy",
           },
         },
       });
@@ -47,6 +50,12 @@ function Registration() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="password"
+            />
+            <input
+              type="text"
+              value={link}
+              onChange={(e) => setLink(e.target.value)}
+              placeholder="Social link"
             />
             <button onClick={create}>register</button>
           </form>
