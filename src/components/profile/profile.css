@@ -3,16 +3,32 @@
   display: grid;
   /* justify-items: center; */
 }
+.display-edit {
+  display: flex;
+}
 
+.edit-profile {
+  flex: 0.1;
+  margin-top: 20px;
+  margin-right: 20px;
+  background: rgba(20, 20, 21, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  height: fit-content;
+  padding: 15px;
+  border-radius: 20px;
+}
 .myopnions {
   /* width: 60%; */
+  margin-left: 200px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  flex: 0.98;
   /* align-items: center; */
 }
 .idk2 {
-  width: 60%;
+  max-width: 70%;
   display: grid;
+  flex: 0.7;
 }
 .main-content2 {
   padding-top: 25px;
@@ -52,7 +68,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-
+  word-break: break-all;
   line-break: strict;
 }
 .userName2 {
@@ -65,4 +81,16 @@
 .avatar-name2 {
   display: flex;
   align-items: center;
+}
+.profile-post-delete {
+  margin-top: 10px;
+  background: rgba(20, 20, 21, 0.25);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  cursor: pointer;
+}
+.profile-post-delete:hover {
+  box-shadow: none;
 }

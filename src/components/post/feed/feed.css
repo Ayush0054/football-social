@@ -7,14 +7,15 @@
   flex: 1;
   outline-width: 0;
   font-weight: 600;
-
+  background-color: rgb(208, 200, 219);
   resize: none;
 }
+
 .ip {
   margin-top: 20px;
   justify-content: space-evenly;
   display: flex;
-  background-color: white;
+  background-color: rgb(208, 200, 219);
   padding: 10px;
   padding-bottom: 15px;
   border-radius: 10px;
@@ -28,7 +29,7 @@
 .ip2 > input {
   border-radius: 5px;
   border: none;
-
+  background-color: rgb(152, 138, 172);
   outline-width: 0;
   font-weight: 600;
   margin-right: 20px;
@@ -40,17 +41,17 @@
 }
 .submit {
   /* display: none; */
-  border-radius: 5px;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: rgb(206, 204, 204);
+  margin-top: 10px;
+  background: rgba(20, 20, 21, 0.25);
   border: none;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  cursor: pointer;
+  font-size: medium;
 }
 .submit:hover {
-  background-color: rgb(128, 99, 99);
-  box-shadow: 2px 2px 2px 2px #9c7ecc;
+  box-shadow: none;
 }
 .post {
   margin-top: 25px;
@@ -71,6 +72,7 @@
 }
 .main-area {
   flex: 0.6;
+  max-width: 900px;
 }
 
 /* *************************************** user post section**************************  */
@@ -111,8 +113,8 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-
-  line-break: strict;
+  word-break: break-all;
+  line-break: auto;
 }
 .userName {
   color: #ebe7e7;
