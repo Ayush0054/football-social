@@ -61,7 +61,6 @@
   margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
-  mix-blend-mode: normal;
   border-radius: 10px;
   height: fit-content;
 
@@ -94,13 +93,9 @@
 .all-contents {
   display: flex;
   padding-top: 25px;
-  /* padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 25px; */
   justify-content: space-between;
 }
-.image-text {
-}
+
 .content-image {
   max-width: 250px;
   max-height: 250px;
@@ -126,4 +121,68 @@
 .avatar-name {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .post {
+    margin-top: 25px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    height: fit-content;
+
+    background: rgba(20, 20, 21, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+  }
+  .ip {
+    margin-top: 0px;
+    justify-content: space-evenly;
+    display: flex;
+    background-color: rgb(208, 200, 219);
+    padding: 0px;
+    /* padding-bottom: 15px; */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  .ip > textarea {
+    border: none;
+    flex: 1;
+    outline-width: 0;
+    font-weight: 600;
+    background-color: rgb(208, 200, 219);
+    resize: none;
+  }
+  .main-area {
+    padding: -10px;
+    margin: auto;
+  }
+  .main-content {
+    padding: none;
+    display: grid;
+  }
+  .all-contents {
+    display: grid;
+    justify-items: center;
+  }
+  .para {
+    order: 2;
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    background: rgba(20, 20, 21, 0.25);
+    border-radius: 10px;
+  }
+  .content-image {
+    order: 1;
+    width: 100%;
+    height: 100%;
+  }
 }

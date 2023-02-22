@@ -1,11 +1,17 @@
-.mains{
-    display: flex;
-    /* max-width: 1200px; */
-    /* justify-content: space-evenly; */
-     
+.mains {
+  display: flex;
+  /* max-width: 1200px; */
+  /* justify-content: space-evenly; */
 }
-*{
-    /* border-bottom: red 10px;
+* {
+  /* border-bottom: red 10px;
      */
-     /* background-color: aqua; */
+  /* background-color: aqua; */
+}
+
+@media screen and (max-width: 600px) {
+  .mains {
+    margin: auto;
+    padding: -10px;
+  }
 }

@@ -1,21 +1,8 @@
-/* .App{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+.App {
   display: flex;
   flex-direction: column;
-} */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-.App{
-  display: flex;
-  flex-direction: column;
-  font-family: 'Inter', sans-serif;
-  /* max-width: 1200px; */
-  /* margin-top: 35px; */
-  /* min-width: fit-content; */
-  /* background: linear-gradient(180deg, rgba(59, 14, 60, 0.384) 3.81%, rgba(67, 6, 68, 0.144) 23.85%, rgba(43, 1, 31, 0.196) 37.88%), linear-gradient(360deg, rgba(11, 5, 21, 0.6) -3.27%, rgba(3, 1, 7, 0.6) 1.27%); */
-
-  /* background-color: aquamarine; */
-  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.192) 3.81%, rgba(0, 0, 0, 0.072) 23.85%, rgba(148, 51, 120, 0.172) 37.88%), linear-gradient(360deg, rgba(97, 72, 138, 0.5) -3.27%, rgba(82, 22, 202, 0.5) 1.27%); */
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  width: 100%;
 }
-/* body{ */
-  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.192) 3.81%, rgba(0, 0, 0, 0.072) 23.85%, rgba(148, 51, 120, 0.172) 37.88%), linear-gradient(360deg, rgba(97, 72, 138, 0.5) -3.27%, rgba(82, 22, 202, 0.5) 1.27%); */
-
-/* } */

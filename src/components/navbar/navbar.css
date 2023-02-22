@@ -4,7 +4,8 @@
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 100%;
+  /* width: 100%; */
+
   background: rgba(20, 20, 21, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3.5px);
@@ -85,43 +86,17 @@
   font-size: large;
   color: white;
   background-color: rgba(193, 119, 207, 0.322);
-  /* box-shadow: 1px 1px 1px 1px #b38af5; */
+
   border: none;
 }
-.logout:hover {
-  /* background-color: #b38af5; */
-}
-
-/* .navbar .icon {
-  display: none;
-} */
-/* @media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-} */
-
-/* @media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-} */
 
 @media screen and (max-width: 600px) {
   .navbar {
     display: grid;
     text-align: center;
     justify-items: center;
+
+    width: 100%;
   }
   .Logo-div {
     display: grid;

@@ -1,16 +1,6 @@
-* {
-  margin: 0;
-  /* box-shadow: none; */
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 body {
   margin: 0;
-  /* background-color: rgb(161, 208, 233); */
-  /* background-color: black; */
-
-  /* background-color: rgb(36, 116, 182); */
-  /* background-color: rgb(30, 9, 68); */
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.192) 3.81%,
@@ -22,7 +12,7 @@ body {
       rgba(100, 71, 146, 0.5) -3.27%,
       rgba(82, 22, 202, 0.5) 1.27%
     );
-  min-height: 715px;
+  /* min-height: 715px; */
 }
 * {
   margin: 0;
