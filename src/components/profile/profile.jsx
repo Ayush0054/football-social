@@ -62,13 +62,13 @@ function Profile({ token }) {
         {opinion && (
           <div className="idk2">
             {/* <FlipMove> */}
+
+            <h3 className="post-manage">Manage/delete Posts</h3>
+
             {opinion.map((masti) => {
               return (
                 <div className="main-content2" key={masti.id}>
-                  <div className="avatar-name2">
-                    <AccountBoxIcon />
-                    <h6 className="userName2">{masti.user_name}</h6>
-                  </div>
+                  <div className="avatar-name2"></div>
                   <div className="all-contents2">
                     {masti.content === "" ? (
                       ""

@@ -40,6 +40,8 @@ function Feed({ token }) {
       content: input,
       images: image,
       user_name: token.session.user.user_metadata.name,
+      dp: token.session.user.user_metadata.image,
+      social_link: token.session.user.user_metadata.link,
     });
     // .select()
     if (error) {
@@ -95,8 +97,9 @@ function Feed({ token }) {
               return (
                 <div className="main-content" key={masti.id}>
                   <div className="avatar-name">
-                    <AccountBoxIcon />
+                    <img src={masti.dp} alt="DP" className="avatar_dp" />
                     <h6 className="userName">{masti.user_name}</h6>
+                    <a href={masti.social_link}>twitter Link</a>
                   </div>
                   <div className="all-contents">
                     {masti.content === "" ? (

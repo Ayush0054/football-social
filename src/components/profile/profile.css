@@ -96,6 +96,11 @@
 .profile-post-delete:hover {
   box-shadow: none;
 }
+.post-manage {
+  text-align: center;
+  padding: 10px;
+  color: black;
+}
 @media screen and (max-width: 600px) {
   .display-edit {
     display: grid;
@@ -138,5 +143,6 @@
     text-align: center;
     /* box-shadow: none; */
     margin: auto;
+    margin-bottom: 10px;
   }
 }

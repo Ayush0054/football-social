@@ -49,6 +49,7 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   cursor: pointer;
   font-size: medium;
+  color: #ffffff;
 }
 .submit:hover {
   box-shadow: none;
@@ -57,7 +58,7 @@
   margin-top: 25px;
   padding-top: 30px;
   padding-bottom: 50px;
-
+  color: white;
   margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
@@ -112,15 +113,22 @@
   line-break: auto;
 }
 .userName {
-  color: #ebe7e7;
+  color: #201f1f;
   font-family: "Inter";
   font-style: normal;
   font-weight: 60;
+  font-size: medium;
   margin-left: 10px;
 }
 .avatar-name {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+}
+.avatar_dp {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 600px) {
@@ -184,5 +192,13 @@
     order: 1;
     width: 100%;
     height: 100%;
+  }
+  .avatar-name {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .userName {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

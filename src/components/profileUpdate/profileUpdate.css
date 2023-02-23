@@ -7,6 +7,7 @@
   /* min-height: 100vh; */
   display: flex;
   justify-content: center;
+  z-index: -1;
 }
 .all-update {
   /* padding: 50px; */
@@ -56,6 +57,6 @@
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color: black;
   opacity: 1; /* Firefox */
 }

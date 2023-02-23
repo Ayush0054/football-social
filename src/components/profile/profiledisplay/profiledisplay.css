@@ -12,6 +12,7 @@
   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
+  z-index: -1;
 }
 .profile-div1 {
   display: flex;
@@ -21,8 +22,8 @@
 }
 .profile-image {
   padding: 20px;
-  height: 400px;
-  width: 400px;
+  max-height: 250px;
+  max-width: 250px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 .profile-email {
@@ -49,6 +50,7 @@ a {
   .profile-details {
     justify-items: center;
     display: grid;
+    /* margin: auto; */
   }
   .profile-div1 {
     text-align: center;

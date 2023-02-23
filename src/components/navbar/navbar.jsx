@@ -11,7 +11,7 @@ import { useState } from "react";
 import Logout from "../logout/logout";
 import { supabase } from "../../lib/client";
 
-function Navbar({ setRef }) {
+function Navbar({ setRef, token }) {
   let navigate = useNavigate();
 
   // const [ref, setRef] = useState(true);
@@ -43,12 +43,22 @@ function Navbar({ setRef }) {
         <Link to="/highlights">
           <h3 className="news">Highlights</h3>
         </Link>
-        <button onClick={handleLogout} className="logout">
-          Logout
-        </button>
-        <Link to="/profile">
-          <h3 className="profile-link"> Profile</h3>
-        </Link>
+
+        <div class="dropdown">
+          <img
+            src={token.session.user.user_metadata.image}
+            alt="imgs"
+            className="avtar-image"
+          />
+          <div class="dropdown-content">
+            <Link to="/profile">
+              <h3 className="profile-link"> Profile</h3>
+            </Link>
+            <button onClick={handleLogout} className="logout">
+              Logout
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
