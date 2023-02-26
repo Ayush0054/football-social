@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import { redirect } from "react-router-dom";
 import { supabase } from "../../lib/client";
 import "./profileUpdate.css";
 function ProfileUpdate({ token, url }) {
@@ -8,10 +9,6 @@ function ProfileUpdate({ token, url }) {
   const [name, setName] = React.useState("");
   const [avatarUrl, setAvatarUrl] = useState("");
   const [uploading, setUploading] = useState(false);
-
-  // useEffect(() => {
-  //   if (avatarUrl) downloadImage(avatarUrl);
-  // }, [avatarUrl]);
 
   const uploadimage = async (e) => {
     try {
@@ -61,7 +58,13 @@ function ProfileUpdate({ token, url }) {
       const { data, error } = await supabase.auth.updateUser({
         data: { link: input },
       });
+      const { errors } = await supabase
+        .from("opinion")
+        .update({ social_link: input })
+        .eq("user_id", token.user.id);
       if (error) throw error;
+      await supabase.auth.signOut();
+      window.location.href = "/";
       alert("social link changed relogin to see the change");
     } catch (error) {
       alert(error);
@@ -75,7 +78,16 @@ function ProfileUpdate({ token, url }) {
         data: { image: avatarUrl },
       });
       if (error) throw error;
-      alert("social link changed relogin to see the change");
+
+      const { errors } = await supabase
+        .from("opinion")
+        .update({ dp: avatarUrl })
+        .eq("user_id", token.user.id);
+
+      await supabase.auth.signOut();
+      window.location.href = "/";
+
+      alert("image is changed relogin to see the change");
     } catch (error) {
       alert(error);
     }
@@ -96,6 +108,8 @@ function ProfileUpdate({ token, url }) {
         },
       });
       if (error) throw error;
+      await supabase.auth.signOut();
+      window.location.href = "/";
       alert("check your email for verification llink");
     } catch (error) {
       alert(error);
@@ -107,7 +121,14 @@ function ProfileUpdate({ token, url }) {
       const { data, error } = await supabase.auth.updateUser({
         data: { name: name },
       });
+      const { errors } = await supabase
+        .from("opinion")
+        .update({ user_name: name })
+        .eq("user_id", token.user.id);
       if (error) throw error;
+
+      await supabase.auth.signOut();
+      window.location.href = "/";
       alert("name changed relogin to see the change");
     } catch (error) {
       alert(error);
@@ -119,12 +140,10 @@ function ProfileUpdate({ token, url }) {
     <div className="profile-update">
       <div className="all-update">
         <div className="image-update">
-          {/* <form action=""></form> */}
           <input
             type="file"
             id="single"
             accept="image/*"
-            // value={image}
             onChange={uploadimage}
             disabled={uploading}
           />

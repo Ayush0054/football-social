@@ -1,21 +1,18 @@
 .profile-update {
   padding: 50px;
-  /* background: linear-gradient(to right, #fff 40%, transparent 0%); */
+
   background-color: rgba(212, 212, 212, 0.164);
 
   height: 100%;
-  /* min-height: 100vh; */
+
   display: flex;
   justify-content: center;
 }
 .all-update {
-  /* padding: 50px; */
-  /* ju */
 }
 .image-update > input {
   padding: 20px;
   width: 100%;
-  /* background-color: rgba(88, 81, 94, 0.288); */
 }
 .image-update {
   display: flex;
@@ -26,7 +23,6 @@
   justify-content: flex-start;
 }
 .link-email-name-update > form > input {
-  /* width: min(55rem, 95%); */
   margin-top: 2.5rem;
   width: 100%;
   background-color: rgba(88, 81, 94, 0.288);
@@ -55,7 +51,6 @@
 }
 
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: black;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }

@@ -63,8 +63,6 @@ function Profile({ token }) {
           <div className="idk2">
             {/* <FlipMove> */}
 
-            <h3 className="post-manage">Manage/delete Posts</h3>
-
             {opinion.map((masti) => {
               return (
                 <div className="main-content2" key={masti.id}>

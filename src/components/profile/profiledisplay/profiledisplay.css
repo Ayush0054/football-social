@@ -52,6 +52,7 @@ a {
     /* margin: auto; */
   }
   .profile-div1 {
+    justify-items: center;
     text-align: center;
     font-size: xx-small;
     display: grid;

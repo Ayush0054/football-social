@@ -42,6 +42,7 @@ function Feed({ token }) {
       user_name: token.session.user.user_metadata.name,
       dp: token.session.user.user_metadata.image,
       social_link: token.session.user.user_metadata.link,
+      user_id: token.user.id,
     });
     // .select()
     if (error) {

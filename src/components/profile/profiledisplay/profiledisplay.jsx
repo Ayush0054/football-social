@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import { Link } from "react-router-dom";
 import "./profiledisplay.css";
 import { supabase } from "../../../lib/client";
+
 function ProfileDisplay({ setOpinion, opinion, token }) {
-  console.log(token.session.user.user_metadata.image);
   return (
     <div className="profile-details">
       <div className="yes">

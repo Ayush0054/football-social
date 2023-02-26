@@ -1,7 +1,6 @@
 .profile {
   min-height: 540px;
   display: grid;
-  /* justify-items: center; */
 }
 .display-edit {
   display: flex;
@@ -25,7 +24,6 @@
   display: flex;
   justify-content: center;
   flex: 0.98;
-  /* align-items: center; */
 }
 .idk2 {
   max-width: 70%;
