@@ -2,6 +2,12 @@
  social media app specially for football fans with highlights feature
  
 # Features:-
+#login
+![image](https://user-images.githubusercontent.com/97244608/222270541-3229863f-ea74-4aba-a694-c3b9f2569d5f.png)
+#register
+![image](https://user-images.githubusercontent.com/97244608/222270357-973405ab-3d3f-4145-a8b9-ecaf289fc8e2.png)
+#after login , feed page
+![image](https://user-images.githubusercontent.com/97244608/222270844-b71b3773-5023-4d66-a642-eed2c9d6e69a.png)
 # User can create posts with images 
 ![image](https://user-images.githubusercontent.com/97244608/221432138-cecfc434-cc7b-48ff-8d4c-c6c71671ad3d.png)
 # See other posts with thier twitter LINK
@@ -9,7 +15,7 @@
 # Watch and search highlights 
 ![image](https://user-images.githubusercontent.com/97244608/221432455-fc0ba3b4-ea25-4cb5-ba18-0c6a0601bbd5.png)
 # Preview your profile
-![image](https://user-images.githubusercontent.com/97244608/221432563-365cfa2d-3fd9-4017-818f-35f8823bb40f.png)
+![image](https://user-images.githubusercontent.com/97244608/222271114-a53a2dfd-640b-4bc7-bba9-22e5225a9b37.png)
 # Delete your post from profile 
 ![image](https://user-images.githubusercontent.com/97244608/221432592-3dd66b28-095b-4ff7-8734-a5bee98412f2.png)
 # Edit your details
