@@ -61,7 +61,7 @@ function Profile({ token }) {
         {fetchError && <h3>{fetchError}</h3>}
         {opinion && (
           <div className="idk2">
-            {/* <FlipMove> */}
+           
 
             {opinion.map((masti) => {
               return (
@@ -92,7 +92,7 @@ function Profile({ token }) {
                 </div>
               );
             })}
-            {/* </FlipMove> */}
+           
           </div>
         )}
       </div>
