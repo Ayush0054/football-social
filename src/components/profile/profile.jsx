@@ -11,7 +11,7 @@ function Profile({ token }) {
   const fetchOpnion = async () => {
     const { data, error } = await supabase
       .from("opinion")
-      .select() //`content,images, users (raw_user_meta_data)`
+      .select() 
       .eq("user_name", token.session.user.user_metadata.name)
       .order("id", { ascending: false });
     if (error) {
@@ -39,7 +39,7 @@ function Profile({ token }) {
       console.log(error);
     }
     fetchOpnion();
-    // console.log(token.session.user.user_metadata.name);
+
   };
 
   return (
