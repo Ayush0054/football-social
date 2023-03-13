@@ -13,14 +13,13 @@ import Logout from "./components/logout/logout";
 import Profile from "./components/profile/profile";
 import ProfileUpdate from "./components/profileUpdate/profileUpdate";
 function App() {
-  // const [ref, setRef] = useState(true);
   const [ref, setRef] = useState(false);
   const [token, setToken] = useState(false);
 
   useEffect(() => {
     if (sessionStorage.getItem("token")) {
       let data = JSON.parse(sessionStorage.getItem("token"));
-      console.log(data);
+
       setToken(data);
       setRef(true);
     }

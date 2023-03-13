@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Login from "../login/login";
 import { supabase } from "../../lib/client";
 import { useNavigate } from "react-router-dom";
-// import { Route, Routes } from 'react-router-dom';
+
 function Home({ setToken, setRef }) {
   const defaultOptions = {
     loop: true,
@@ -15,14 +15,12 @@ function Home({ setToken, setRef }) {
   const style = {
     height: 335,
     width: 335,
-    // justifyContent:"center",
-    // alignItems: "center",
+
     display: "flex",
-    // marginLeft:"150px"
   };
   const handleLogout = () => {
     sessionStorage.removeItem("token");
-    // navigate("/");
+
     setRef(false);
   };
   handleLogout();
@@ -44,9 +42,6 @@ function Home({ setToken, setRef }) {
           />
           <Login setToken={setToken} setRef={setRef} />
         </div>
-        {/* <Link to="/register">
-          <button className="btn">get started</button>
-        </Link> */}
       </div>
       <div class="footer-cols">
         <ul>

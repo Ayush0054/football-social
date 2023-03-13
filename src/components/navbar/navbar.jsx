@@ -5,7 +5,7 @@ import Home from "../home/home";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import Home from './components/home/home'
+
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Logout from "../logout/logout";
@@ -14,7 +14,6 @@ import { supabase } from "../../lib/client";
 function Navbar({ setRef, token }) {
   let navigate = useNavigate();
 
-  // const [ref, setRef] = useState(true);
   const handleLogout = () => {
     sessionStorage.removeItem("token");
     navigate("/");

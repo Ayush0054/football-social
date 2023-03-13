@@ -4,12 +4,6 @@ const tweets = [
     text: "Norway are blessed 🇳🇴💫 ",
     media_url: "https://pbs.twimg.com/media/FleWC6KXkAE6t1K.jpg",
   },
-  // {
-  //   id: 2,
-  //   text: "This firework tribute to Pele is incredible 🥺💚 ",
-  //   media_url:
-  //     "https://pbs.twimg.com/amplify_video_thumb/1609912396054675456/img/5GEXQ7-Qll3VMeFe.jpg",
-  // },
   {
     id: 3,
     text: "Alexis Mac Allister got a hero's welcome from Brighton 🥺🎉 ",

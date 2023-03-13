@@ -8,7 +8,7 @@ function Post({ token }) {
     <div className="mains">
       <Sidebar />
       <Feed token={token} key={token.user.id} />
-      {/* <Feed/> */}
+
       <Widgets />
     </div>
   );

@@ -11,7 +11,7 @@ function Profile({ token }) {
   const fetchOpnion = async () => {
     const { data, error } = await supabase
       .from("opinion")
-      .select() 
+      .select()
       .eq("user_name", token.session.user.user_metadata.name)
       .order("id", { ascending: false });
     if (error) {
@@ -39,7 +39,6 @@ function Profile({ token }) {
       console.log(error);
     }
     fetchOpnion();
-
   };
 
   return (
@@ -61,8 +60,6 @@ function Profile({ token }) {
         {fetchError && <h3>{fetchError}</h3>}
         {opinion && (
           <div className="idk2">
-           
-
             {opinion.map((masti) => {
               return (
                 <div className="main-content2" key={masti.id}>
@@ -92,7 +89,6 @@ function Profile({ token }) {
                 </div>
               );
             })}
-           
           </div>
         )}
       </div>

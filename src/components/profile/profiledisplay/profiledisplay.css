@@ -1,17 +1,13 @@
 .profile-details {
   display: flex;
   justify-content: space-between;
-  /* position: sticky; */
+
   top: 0;
   flex: 0.98;
   margin: 20px;
   border-radius: 10px;
 
   min-height: 300px;
-
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-
-  /* z-index: -1; */
 }
 .profile-div1 {
   display: flex;
@@ -49,7 +45,6 @@ a {
   .profile-details {
     justify-items: center;
     display: grid;
-    /* margin: auto; */
   }
   .profile-div1 {
     justify-items: center;

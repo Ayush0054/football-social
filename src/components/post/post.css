@@ -1,12 +1,5 @@
 .mains {
   display: flex;
-  /* max-width: 1200px; */
-  /* justify-content: space-evenly; */
-}
-* {
-  /* border-bottom: red 10px;
-     */
-  /* background-color: aqua; */
 }
 
 @media screen and (max-width: 600px) {

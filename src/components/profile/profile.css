@@ -49,9 +49,7 @@
 .all-contents2 {
   display: flex;
   padding-top: 25px;
-  /* padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 25px; */
+
   justify-content: space-between;
 }
 .image-text2 {
@@ -108,7 +106,7 @@
   .profile {
     margin: auto;
     justify-items: center;
-    /* margin: -10px; */
+
     padding: -10px;
   }
   .display-edit {
@@ -139,7 +137,7 @@
   }
   .edit-profile {
     text-align: center;
-    /* box-shadow: none; */
+
     margin: auto;
     margin-bottom: 10px;
   }

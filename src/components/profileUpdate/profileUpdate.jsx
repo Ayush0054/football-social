@@ -94,7 +94,6 @@ function ProfileUpdate({ token, url }) {
   };
 
   ////////////////////////////////
-  // ({ email: "new@email.com" });
 
   const updateEmail = async (e) => {
     e.preventDefault();

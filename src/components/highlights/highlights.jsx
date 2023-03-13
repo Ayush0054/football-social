@@ -4,9 +4,7 @@ import DOMPurify from "dompurify";
 import "./highlights.css";
 import Lottie from "lottie-react";
 import animation from "./rolling-footbll.json";
-// import ".../.env"
-// import  dotenv from 'dotenv'
-// dotenv.config()
+
 function Highlights() {
   const defaultOptions = {
     loop: true,
@@ -15,13 +13,10 @@ function Highlights() {
   const style = {
     height: 335,
     width: 335,
-    // justifyContent:"center",
-    // alignItems: "center",
+
     display: "flex",
-    // marginLeft:"150px"
   };
 
-  // api
   const [match, setMatch] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchTitle, setSearchTitle] = useState("");

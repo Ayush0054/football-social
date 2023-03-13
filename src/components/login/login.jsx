@@ -20,7 +20,7 @@ function Login({ setToken, setRef }) {
         sessionStorage.setItem("token", JSON.stringify(data));
       }
       setRef(true);
-      // console.log(data);
+
       navigate("/Post");
     } catch (error) {
       alert(error);
