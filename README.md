@@ -20,6 +20,11 @@
 ![image](https://user-images.githubusercontent.com/97244608/221432592-3dd66b28-095b-4ff7-8734-a5bee98412f2.png)
 # Edit your details
 ![image](https://user-images.githubusercontent.com/97244608/221432637-79803bf7-0c6a-4a23-8224-835ca8b10271.png)
+# responsive
+![Screenshot from 2023-08-19 00-24-09](https://github.com/Ayush0054/football-social/assets/97244608/a58b7f60-7b5f-4690-91bc-6c23c1bbcfeb)
+![Screenshot from 2023-08-19 00-24-34](https://github.com/Ayush0054/football-social/assets/97244608/4fa2bf3d-19a1-44ff-a91c-e6dd6f4aa56e)
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 #  upcoming features 
 # 1.like and comment
